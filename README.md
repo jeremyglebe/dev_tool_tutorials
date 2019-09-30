@@ -11,4 +11,4 @@ jeremyglebe@gmail.com
 
 |    Tutorial Name     | Description                                        |
 |:--------------------:|:-------------------------------------------------- |
-| [Windows + VSCode](https://github.com/jeremyglebe/dev_tool_tutorials/tree/master/guides_and_tutorials/win_vsc) | Setting up a dev environment with vscode on Windows |
+| [Windows + VSCode](https://github.com/jeremyglebe/dev_tool_tutorials/tree/master/win_vsc) | Setting up a dev environment with vscode on Windows |
