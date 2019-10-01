@@ -38,8 +38,7 @@ I've provided.
     * ```
         "code-runner.executorMap": {
             "cpp": "cd $dir && g++ *.cpp -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
-        }
-    ```
+        }```
 * If there is already a line containing `code-runner.executorMap`, or if it autocompletes a bunch of lines all at once, its okay! Just find the line that says `cpp` and change it to the command written above.
 ![Adding the executor map to settings](./assets/executor_map.gif)
 
