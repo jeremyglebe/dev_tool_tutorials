@@ -19,6 +19,30 @@ on Windows, [follow this tutorial.](https://github.com/jeremyglebe/dev_tool_tuto
 ## 3 Methods of Multiple File Compilation
 
 ### Use the integrated terminal
+By far the most direct method of compiling and running code: use the command
+line. You can open a terminal within VSCode by pressing `` CTRL+` ``. Once you
+have your terminal open, we can use commands to compile your files and run
+the program.
+* If your files are not in the root of the folder you have open, then you need to use the command below to navigate to the folder your files are in.
+    * `cd ./path/to/my/folder`
+    * ex) You've opened a folder called `projects/` and want to compile code in `projects/assignment1/`
+        * command: `cd ./assignment1`
+* Inside the folder, we are going to run a command to compile all `.cpp` files. .h files will be added with `#include""` in the code itself, so we don't have to worry about those.
+    * command: `g++ *.cpp -o prog1.exe`
+    * Let's break down what each part of this command does
+    * `g++` we are running the compiler with this command, pretty basic
+    * `*.cpp` here is where you *usually* put a file name, but in this case we want to compile *all* files ending in `.cpp`. We can do this by using `*`, which basically translates to "anything". So "anything" followed by `.cpp` translates to all files that end with `.cpp`.
+    * `-o prog1.exe` the `-o` flag just tells g++ that I'm about to give it the name of my program's executable. On Windows we usually make the extension `.exe` but you can make it whatever you want. You can also name it whatever you want, it doesn't have to be `prog1`. This is the file you will run your program with.
+* Now, if we compiled successfully, we will use a command to actually run the code
+    * If you have compilation errors, make sure your code is correct! No syntax errors!
+    * If you are using the default Windows command line in VSCode (this is what VSCode will use by default as well), run the program by typing in its name **without** the extension like so:
+        * `prog1`
+    * If you are using a Bash terminal or something like it, you may need to enter the following instead
+        * `./prog1.exe`
+
+That's it! You should have the output of your program in your terminal. Now you
+just have several thousand bugs and a few hundred debugging statements to get
+through and you're done.
 
 ### Code Runner's Executor Map
 This method is simple. When you run something using Code Runner, you'll notice
@@ -43,3 +67,4 @@ I've provided.
 ![Adding the executor map to settings](./assets/executor_map.gif)
 
 ### Preprocessor Directive: 'include'
+WIP, will complete later.
