@@ -44,6 +44,16 @@ I highly recommend it.
 * Click `install` near the top of the page
 * To run your code, right click while in the cpp file and select "Run Code"
 * If you wish to compile multiple files and not simply execute the one you have open, [see this tutorial](https://github.com/jeremyglebe/dev_tool_tutorials/tree/master/vsc_mf)
+* To configure additional settings, you'll need to go to your preferences 
+    * Open your project's folder in Visual Studio Code
+    * Click `file` in the top left
+    * Select `preferences`, then `settings` in the drop down menu
+        * This should open a new tab within vscode
+    * In the search bar, type in the setting you wish to change
+* You may want to configure these settings (optional):
+    * `Code-runner: Run in Terminal` check this box to allow for interaction with your program. By default it goes to a non-interactive output which can block things like `cin` from getting keyboard input
+    * `Code-runner: Save All Files Before Run` check this box to automatically make sure your files are saved when clicking `Run Code`
+    * `Code-runner: File Directory As Cwd` check this box to automatically compile from the directory your file is in. This will prevent *a lot* of errors. Otherwise it might say that the file you're trying to compile can't be found (if you're in a folder with multiple projects inside)
 
 ## Install [Git](https://git-scm.com/downloads)
 Git is a useful tool for project management, version control, and
