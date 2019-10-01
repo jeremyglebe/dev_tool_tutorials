@@ -67,4 +67,37 @@ I've provided.
 ![Adding the executor map to settings](./assets/executor_map.gif)
 
 ### Preprocessor Directive: 'include'
-WIP, will complete later.
+With some careful placement of `#include` preprocessor directives, we can make
+sure to include and compile all our files just by compiling our main `.cpp`
+file. For classes, your `.h` file will need to include the `.cpp`
+implementation file. Now when you include the `.h` you get the `.cpp` as well.
+Your `.h` file will also need to include `#pragma once` so it isn't included
+multiple times. If I have a class called `A` divided into definition file `A.h`
+and `A.cpp`, with my program's main functionality being found in `main.cpp`,
+I would need each file to look something like this:
+* main.cpp
+    * ```cpp
+        #include"A.h"
+        //...
+        int main(){
+            //...
+        }
+        //...
+        ```
+* A.h
+    * ```cpp
+        #pragma once
+        //...
+        class A {
+            //...
+        };
+        //...
+        #include"A.cpp"
+        ```
+    * Note that the `#include` is at the *bottom* of the file in this case. That is because the implementation (inside the `.cpp`) **must** come after the prototype (which is what we were defining above that in the `.h` file)
+* A.cpp
+    * ```cpp
+        #include"A.h"
+        //...
+        ```
+* You can see an example of how this works in the folder labeled `include_example/`
