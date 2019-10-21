@@ -20,19 +20,21 @@ The following is assumed about your environment:
     * Add to PATH (requires shell restart)
 * The first two options allow you to open VSCode by right clicking in a folder or file. The third option lets you open VSCode from command line using the command `code [folder_path]`.
 
-## Install [MinGW](https://osdn.net/projects/mingw/releases/)
+## Install [MinGW-W64](https://sourceforge.net/projects/mingw-w64/files/)
 MinGW is a package of GNU elements for developers on Windows. If that last
 sentence didn't make sense, don't worry its not important. What *is* important
 is that MinGW comes with the option to install the G++ compiler. This is the
 compiler of choice for many c++ developers and the one we will be using.
-* When choosing which elements of MinGW to install, make sure to select the C++ compiler `g++`
-    * Once you've selected which elements of MinGW to install, click `installation` in the top left corner and then `apply changes`
-* NOTE which directory MinGW is installed to, it should contain a folder called `bin\`
+(Note: MinGW-W64 is a newer, actively maintained version of MinGW. This
+tutorial was originally written for MinGW but MinGW-W64 has wider compatibility
+and easier installation.)
+* Under `Architecture` select `x86_64`
+* NOTE which directory MinGW is installed to, it should contain a folder called `mingw64\bin\`
 * Add MinGW's `bin\` folder to your `PATH`
 * On Windows 10, PATH can be modified by following these steps
     1. In Search, search for and then select: Edit the system environment variables
     2. Click Environment Variables. In the section System Variables, find the PATH environment variable and select it. Click Edit. If the PATH environment variable does not exist, click New.
-    3. In the Edit System Variable (or New System Variable) window, click "new" to add a new line to the PATH, then enter the path of MinGW's bin folder (C:\\\wherever\i\installed\it\mingw\bin\). Click OK. Close all remaining windows by clicking OK.
+    3. In the Edit System Variable (or New System Variable) window, click "new" to add a new line to the PATH, then enter the path of MinGW's bin folder (C:\\\wherever\i\installed\it\mingw64\bin\\). Click OK. Close all remaining windows by clicking OK.
 
 ## Add extension "Code Runner" to VSCode
 The Code Runner extension is a quick and convienent method of executing your
