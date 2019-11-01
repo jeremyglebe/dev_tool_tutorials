@@ -60,6 +60,19 @@ to proceed with making it your default terminal, follow the steps below:
 * Add the following line to `settings.json`, careful **not to remove the outer {} braces**,
 `"code-runner.terminalRoot": "/cygdrive/"`
 
+## Open Cygwin in a folder?
+Do you want to be able to open your Cygwin terminal in any folder (easily)?
+You can set up a right-click menu option to open the terminal. (That menu is
+called the "context menu") To add Cygwin's terminal to the context menu, [follow
+the advice on this Stack Overflow page.](https://stackoverflow.com/questions/9637601/open-cygwin-at-a-specific-folder) Don't want to follow the link? That's
+okay. It is really easy. Here's the important part:
+```
+After Cygwin is launched, open up a Cygwin terminal (as an administrator)
+and type the command:
+chere -i -t mintty -s bash.
+Now you should have "Bash Prompt Here" in the Windows right-click context menu.
+```
+
 ## Conclusion
 That's it! Cygwin should now work in your existing VSCode environment. Using
 `Run Code` should now use Cygwin's build tools.
