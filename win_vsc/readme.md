@@ -28,6 +28,9 @@ compiler of choice for many c++ developers and the one we will be using.
 (Note: MinGW-W64 is a newer, actively maintained version of MinGW. This
 tutorial was originally written for MinGW but MinGW-W64 has wider compatibility
 and easier installation.)
+* Follow the above MinGW-W64 link, then scroll down the page until you find "MinGW-W64 Online Installer". Click the installer link.
+![Find "MinGW-W64 Online Installer". Click the installer link.](./assets/mingw_installer.gif)
+* Download and run the installer.
 * Under `Architecture` select `x86_64`
 * NOTE which directory MinGW is installed to, it should contain a folder called `mingw64\bin\`
 * Add MinGW's `bin\` folder to your `PATH`
