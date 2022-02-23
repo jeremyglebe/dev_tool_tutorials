@@ -1,4 +1,4 @@
-## Who am I?
+## Developer Tutorials
 My name is Jeremy Glebe. I am a software developer, student, and educator. I attend graduate school at University of North Texas and teach at a private K-12 school called Dexter.
 When I was working on my undergraduate, I was a supplemental instructor for the Data Structures & ADT class. The professor wanted student to learn: to use lightweight editors, use compilation commands, and work in a unix terminal. So, I made these tutorials to help get students started.
 
