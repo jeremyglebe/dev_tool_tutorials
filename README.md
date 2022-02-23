@@ -8,6 +8,6 @@ I still love teaching and I still sometimes refer to these tutorials. I may add 
 
 |    Tutorial Name     | Description                                        |
 |:--------------------:|:-------------------------------------------------- |
-| [C++ w/ Windows, VSCode](/win_vsc/) | Setting up a c++ dev environment with vscode on Windows |
-| [VSC C++ Multi Files](/vsc_mf/) | Compiling c++ programs with multiple files in Visual Studio Code |
-| [C++ w/ Cygwin, VSCode](/cyg_vsc/) | Using Cygwin with your c++ VSCode environment |
+| [C++ w/ Windows, VSCode](/dev_tool_tutorials/win_vsc/) | Setting up a c++ dev environment with vscode on Windows |
+| [VSC C++ Multi Files](/dev_tool_tutorials/vsc_mf/) | Compiling c++ programs with multiple files in Visual Studio Code |
+| [C++ w/ Cygwin, VSCode](/dev_tool_tutorials/cyg_vsc/) | Using Cygwin with your c++ VSCode environment |
